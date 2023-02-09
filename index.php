@@ -25,7 +25,7 @@ $client = new Client([ 'base_uri' => 'https://date.nager.at/api/v3/' ]);
     </script>
 
     <title>Je dnes svátek?</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
     <meta charset="UTF-8">
     <meta name="keywords" content="státní svátky, česká republika, kalendář svátků, pracovní volno, slavnosti, sváteční dny">
     <meta name="author" content="Filip Kocháň">
@@ -67,6 +67,13 @@ $client = new Client([ 'base_uri' => 'https://date.nager.at/api/v3/' ]);
         echo "<p>Bohužel někde nastala chyba :(</p>";
     }
 ?>
+<script>
+    const appHeight = () => {
+        document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`)
+    }
+    window.addEventListener('resize', appHeight)
+    appHeight()
+</script>
 </main>
 <!-- This site was created by Filip Kochan, 2023. -->
 <!-- If you have any suggestions, don't hesitate to contact me at filda<dot>koch<at>gmail<dot>com. -->
