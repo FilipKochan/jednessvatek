@@ -25,7 +25,7 @@ $client = new Client([ 'base_uri' => 'https://date.nager.at/api/v3/' ]);
     </script>
 
     <title>Je dnes svátek?</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="keywords" content="státní svátky, česká republika, kalendář svátků, pracovní volno, slavnosti, sváteční dny">
     <meta name="author" content="Filip Kocháň">
